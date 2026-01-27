@@ -1,9 +1,25 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class TankController : MonoBehaviour
 {
   Vector2 move = Vector2.zero;
+
+  [SerializeField]
+  float rotationSpeed = 20;
+
+  [SerializeField]
+  float walkingSpeed = 1.4f;
+
+  public void Update()
+  {
+    Vector3 mv = Vector3.forward * walkingSpeed * move.y;
+    transform.Translate(mv * Time.deltaTime);
+
+    float angle = rotationSpeed * move.x;
+    transform.Rotate(Vector3.up, angle * Time.deltaTime);
+  }
 
   public void OnMove(InputValue value)
   {
