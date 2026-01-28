@@ -10,8 +10,12 @@ public class NormalController : MonoBehaviour
 
   void Update()
   {
-    Vector3 mv = Vector3.forward * move.y
-              + Vector3.right * move.x;
+    Vector3 mv = Camera.main.transform.forward * move.y
+              + Camera.main.transform.right * move.x;
+
+    mv.y = 0;
+    mv.Normalize();
+
 
     transform.Translate(mv * Time.deltaTime * walkingSpeed);
 
