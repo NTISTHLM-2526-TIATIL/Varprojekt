@@ -7,7 +7,7 @@ public class MoveController : MonoBehaviour
   float walkSpeed = 2f;
 
   [SerializeField]
-  float jumpForce = 200;
+  float jumpForce = 12;
 
   [SerializeField]
   float gravityMult = 2f;
@@ -25,13 +25,15 @@ public class MoveController : MonoBehaviour
 
   void Update()
   {
+    // GRAVITY
     velocityY += Physics.gravity.y * gravityMult * Time.deltaTime;
 
     if (controller.isGrounded && velocityY < 0)
     {
-      velocityY = -.75f;
+      velocityY = -1;
     }
 
+    // MOVEMENT
     Vector3 movement = transform.forward * moveInput.y
     + transform.right * moveInput.x;
 
