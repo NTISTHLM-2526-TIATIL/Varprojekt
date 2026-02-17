@@ -28,6 +28,6 @@ public class ShotgunController : MonoBehaviour
   void Update()
   {
     timeSinceShot += Time.deltaTime;
-    Fire();
+    // Fire();
   }
 }

@@ -8,10 +8,11 @@ public class BulletController : MonoBehaviour
   void Start()
   {
     Destroy(this.gameObject, 5);
+    GetComponent<Rigidbody>().AddForce(transform.forward * 750);
   }
 
   void Update()
   {
-    transform.Translate(Vector3.forward * speed * Time.deltaTime);
+    // transform.Translate(Vector3.forward * speed * Time.deltaTime);
   }
 }
