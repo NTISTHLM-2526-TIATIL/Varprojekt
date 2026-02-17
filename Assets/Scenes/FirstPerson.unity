@@ -3403,20 +3403,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4453503953699865409, guid: 487e98a247d25604eacb44945ee26eaf, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453503953699865409, guid: 487e98a247d25604eacb44945ee26eaf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453503953699865409, guid: 487e98a247d25604eacb44945ee26eaf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4453503953699865409, guid: 487e98a247d25604eacb44945ee26eaf, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453503953699865409, guid: 487e98a247d25604eacb44945ee26eaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453503953699865409, guid: 487e98a247d25604eacb44945ee26eaf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4453503953699865409, guid: 487e98a247d25604eacb44945ee26eaf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6044062310479651779, guid: 487e98a247d25604eacb44945ee26eaf, type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 147512697095753522, guid: 1c59be9e95ee0334aaf717515cebcd6f, type: 3}
+    - target: {fileID: 6044062310479651779, guid: 487e98a247d25604eacb44945ee26eaf, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8187635067847062524, guid: 487e98a247d25604eacb44945ee26eaf, type: 3}
       propertyPath: m_Name
       value: Shotgun
